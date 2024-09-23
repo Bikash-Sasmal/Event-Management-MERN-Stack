@@ -1,0 +1,59 @@
+
+
+/* About.css */
+.about-container {
+    padding: 40px;
+    background-color: #10171E;
+    color: #F1F1F1;
+    height: 100vh;
+}
+
+.about-content {
+    /* max-width: 900px; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+
+.about-title {
+    font-size: 36px;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.mission, .values {
+    margin-bottom: 30px;
+}
+
+.mission h2, .values h2 {
+    font-size: 24px;
+    color: #63cf38;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.contact-btn {
+    padding: 10px 20px;
+    background-color: #63cf38;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #54b32d;
+}

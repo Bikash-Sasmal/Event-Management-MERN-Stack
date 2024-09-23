@@ -1,0 +1,97 @@
+
+.create-event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: #10171E; 
+    color: #F1F1F1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+
+.create-event-border {
+    border: 2px solid #2e3641; 
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px; 
+    width: 80%; 
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4); 
+    animation: fadeIn 1.5s ease-in-out; 
+    margin-top: 10px;
+}
+
+.create-event-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFD700; 
+    text-align: center;
+}
+
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-left, .form-right {
+    width: 48%; 
+}
+
+.title-label, .description-label, .date-label, .time-label, .location-label, .city-label, .state-label, .zip-label, .ticket-type-label, .price-label, .availability-label, .privacy-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.title, .description, .date, .time, .location, .city, .state, .zip, .ticket-type, .price, .availability, .privacy {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #F1F1F1;
+}
+
+.star {
+    color: red;
+}
+
+.create-event-input, .create-event-select, .create-event-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #2e3641; 
+    background-color: #1c1f26; 
+    color: #F1F1F1;
+    box-sizing: border-box;
+}
+
+.create-event-textarea {
+    height: 150px;
+}
+.create-event-button {
+    width: 100%;
+    padding: 12px;
+    background-color:  #63cf38; 
+    color: #0D0D0D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.create-event-button:hover {
+    background-color: #54b32d; 
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

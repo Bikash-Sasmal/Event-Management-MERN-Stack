@@ -1,0 +1,101 @@
+
+.registration-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+}
+
+.registration-modal-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #2e3641;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+    width: 30%;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-title {
+    font-size: 24px;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ticket-label {
+    margin-bottom: 10px;
+    color: #F1F1F1;
+    font-weight: bold;
+
+}
+
+.ticket-select {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #2e3641;
+    background-color: #1c1f26;
+    color: #F1F1F1;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.registration-submit-btn {
+    width: 48%; 
+    padding: 12px;
+    background-color: #63cf38; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registration-submit-btn:hover {
+    background-color: #54b32d; 
+}
+
+/* Close button */
+.registration-close-btn {
+    width: 48%; 
+    background-color: #ff6700; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.registration-close-btn:hover {
+    background-color: #e05d00; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

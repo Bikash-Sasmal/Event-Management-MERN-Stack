@@ -1,0 +1,87 @@
+
+.event-list {
+    margin: 20px 0;
+}
+
+.event-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10171E; 
+    border: 2px solid #2B2F36; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.event-info {
+    max-width: 60%;
+}
+
+.event-info h3 {
+    color: #63cf38; 
+    margin: 0;
+}
+
+.event-info p {
+    color: #F1F1F1;
+}
+.event-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.action-top-row {
+    display: flex;
+    gap: 10px; 
+}
+
+.register-btnn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.update-btnn, .delete-btnn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.update-btnn {
+    background-color: #00aaff; 
+    color: #F1F1F1;
+}
+
+.update-btnn:hover {
+    background-color: #009ae6;
+}
+
+.delete-btnn {
+    background-color: #ff6b6b; 
+    color: #F1F1F1;
+}
+
+.delete-btnn:hover {
+    background-color: #e05050; 
+}
+
+.register-btnn {
+    background-color: #63cf38; 
+    color: #0D0D0D;
+    margin-top: 10px; 
+}
+
+.register-btnn:hover {
+    background-color: #54b32d; 
+}

@@ -1,0 +1,62 @@
+
+.ticket-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #10171E; 
+    border: 2px solid #2B2F36;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    color: #F1F1F1; 
+  }
+  
+
+  .ticket-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .ticket-info h3 {
+    color: #63cf38;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-info p {
+    margin: 5px 0;
+  }
+  
+  
+  .ticket-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .pay-button {
+    background-color: #63cf38;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #4da829;
+  }
+  
+  .pay-button:disabled {
+    background-color: #333; 
+    cursor: not-allowed;
+  }
+  
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
