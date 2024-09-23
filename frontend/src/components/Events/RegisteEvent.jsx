@@ -16,7 +16,7 @@ const RegisterEvent = ({ eventId, handleCloseModal, onRegistered }) => {
               const response = await attendEvent(eventId, { ticketType, paymentStatus: 'unpaid' });
               console.log(response.data);
                 toast.success('Successfully registered for the event!');
-                onRegistered(eventId);  
+                onRegistered();  
                 handleCloseModal();  
                 navigate('/tickets');  
             

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getTickets } from '../../Api'; 
 import TicketList from './TicketList';
 import '../../css/tickets.css'
+import { toast } from 'react-toastify';
 
 
 const Tickets = () => {
@@ -20,6 +21,7 @@ const Tickets = () => {
       } catch (err) {
         setError(err.message);
         setLoading(false);
+        toast.error('you dont have any tickets');
       }
     };
     fetchTickets();
