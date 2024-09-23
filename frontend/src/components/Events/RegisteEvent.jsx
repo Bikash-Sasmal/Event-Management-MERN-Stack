@@ -16,12 +16,12 @@ const RegisterEvent = ({ eventId, handleCloseModal, onRegistered }) => {
               const response = await attendEvent(eventId, { ticketType, paymentStatus: 'unpaid' });
               console.log(response.data);
                 toast.success('Successfully registered for the event!');
-                onRegistered();  
+                onRegistered(eventId);  
                 handleCloseModal();  
                 navigate('/tickets');  
             
         } catch (error) {
-            toast.error('Registration failed, please try again.');
+            toast.error('Registration failed, please try again or check you are a user or not in ticket');
             console.error('Error registering for event:', error);
         }
     };

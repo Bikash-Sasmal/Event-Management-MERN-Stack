@@ -69,16 +69,7 @@ const Dashboard = () => {
         }],
     };
 
-    const lineData = {
-        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5'], 
-        datasets: [{
-            label: '  Tickets Sold',
-            data: [0, 0, 0, 0, stats.ticketsSold], 
-            fill: false,
-            backgroundColor: '#63cf38',
-            borderColor: '#63cf38',  
-        }],
-    };
+ 
 
     return (
         <div className='statistics'>
@@ -99,10 +90,6 @@ const Dashboard = () => {
             </div>
 
             <div className="charts-container">
-                <div className="chart line-chart">
-                    <h3>Ticket Sales Growth</h3>
-                    <Line data={lineData} options={options} />
-                </div>
                 <div className="chart pie-chart">
                     <h3>Ticket Types Distribution</h3>
                     <Pie data={pieData} options={options} />

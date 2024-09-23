@@ -26,7 +26,7 @@ function Register({setIsLogedIn}) {
             await register({ name, email, password, confirmPassword });
             setIsLogedIn(true); 
             toast.success("Registration Successful!");
-            navigate('/');
+            navigate('/login');
         } catch (error) {
             console.error('Registration failed:', error.response.data.message);
             toast.error('Registration failed. Please try again.');

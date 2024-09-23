@@ -62,13 +62,11 @@ function UpdateEvent() {
 
         try {
             await updateEvent(eventId, eventData); 
-            console.log(eventId)
-            console.log(eventData);
             toast.success('event update successfully')
             navigate('/events'); 
         } catch (error) {
-            console.error('Event update failed:', error.response?.data?.message || error.message);
-            toast.error('something wrong in updation')
+            console.error('Event update failed or you are not a valid user:', error.response?.data?.message || error.message);
+            toast.error('something wrong in updation or you are not a valid user')
         }
     };
 
